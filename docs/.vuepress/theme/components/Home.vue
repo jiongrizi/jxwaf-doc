@@ -132,7 +132,7 @@ export default {
     text-align center
     .heroLeft 
       text-align: left 
-      margin-top: 2.5rem
+      margin-top: 4rem
     img
       max-width: 100%
       max-height 180px
