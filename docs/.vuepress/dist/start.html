@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>部署 | JXWAF</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.png">
+    <meta name="description" content="JXWAF——下一代web应用防火墙">
+    
+    <link rel="preload" href="/assets/css/0.styles.1f60ccf5.css" as="style"><link rel="preload" href="/assets/js/app.ffd91db1.js" as="script"><link rel="preload" href="/assets/js/2.51d0b6c7.js" as="script"><link rel="preload" href="/assets/js/13.90c8297b.js" as="script"><link rel="prefetch" href="/assets/js/10.1c1cd36d.js"><link rel="prefetch" href="/assets/js/11.a1c2a117.js"><link rel="prefetch" href="/assets/js/12.57e568e4.js"><link rel="prefetch" href="/assets/js/14.7a32a2e4.js"><link rel="prefetch" href="/assets/js/3.94196fb4.js"><link rel="prefetch" href="/assets/js/4.e6768456.js"><link rel="prefetch" href="/assets/js/5.dfebf928.js"><link rel="prefetch" href="/assets/js/6.ce4e446a.js"><link rel="prefetch" href="/assets/js/7.ba322a70.js"><link rel="prefetch" href="/assets/js/8.a81c2e66.js"><link rel="prefetch" href="/assets/js/9.8f21e9b1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1f60ccf5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">JXWAF</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Menu" class="dropdown-title"><span class="title">文档</span> <span class="arrow down"></span></button> <button type="button" aria-label="Menu" class="mobile-dropdown-title"><span class="title">文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/" class="nav-link">
+  了解
+</a></li><li class="dropdown-item"><!----> <a href="/start/" class="nav-link">
+  部署
+</a></li><li class="dropdown-item"><!----> <a href="/use/" class="nav-link">
+  使用
+</a></li><li class="dropdown-item"><!----> <a href="/share/" class="nav-link">
+  经验分享
+</a></li><li class="dropdown-item"><!----> <a href="/docs/" class="nav-link">
+  开发者文档
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/jx-sec/jxwaf" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Menu" class="dropdown-title"><span class="title">文档</span> <span class="arrow down"></span></button> <button type="button" aria-label="Menu" class="mobile-dropdown-title"><span class="title">文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/about/" class="nav-link">
+  了解
+</a></li><li class="dropdown-item"><!----> <a href="/start/" class="nav-link">
+  部署
+</a></li><li class="dropdown-item"><!----> <a href="/use/" class="nav-link">
+  使用
+</a></li><li class="dropdown-item"><!----> <a href="/share/" class="nav-link">
+  经验分享
+</a></li><li class="dropdown-item"><!----> <a href="/docs/" class="nav-link">
+  开发者文档
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/jx-sec/jxwaf" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">Home</a></li><li><a href="/about.html" class="sidebar-link">了解</a></li><li><a href="/start.html" aria-current="page" class="active sidebar-link">部署</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/start.html#waf-部署方式" class="sidebar-link">WAF 部署方式</a></li><li class="sidebar-sub-header"><a href="/start.html#测试环境部署-源代码部署" class="sidebar-link">测试环境部署(源代码部署)</a></li><li class="sidebar-sub-header"><a href="/start.html#线上环境部署-源代码部署" class="sidebar-link">线上环境部署(源代码部署)</a></li><li class="sidebar-sub-header"><a href="/start.html#日志采集-报表配置" class="sidebar-link">日志采集&amp;报表配置</a></li><li class="sidebar-sub-header"><a href="/start.html#部署效果验证" class="sidebar-link">部署效果验证</a></li></ul></li><li><a href="/use.html" class="sidebar-link">使用</a></li><li><a href="/share.html" class="sidebar-link">经验分享</a></li><li><a href="/docs.html" class="sidebar-link">开发者文档</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="部署"><a href="#部署" class="header-anchor">#</a> 部署</h1> <hr> <h2 id="waf-部署方式"><a href="#waf-部署方式" class="header-anchor">#</a> WAF 部署方式</h2> <p><img src="/image/1.png" alt="图片描述">
+JXWAF 的部署方式为反向代理，支持源代码编译部署和容器化部署，适配集群架构、Kubernetes 等多种使用场景，可以轻松实现快速部署，弹性扩展。</p> <h2 id="测试环境部署-源代码部署"><a href="#测试环境部署-源代码部署" class="header-anchor">#</a> 测试环境部署(源代码部署)</h2> <h3 id="环境准备"><a href="#环境准备" class="header-anchor">#</a> 环境准备</h3> <ul><li>服务器版本 Centos 7.x</li> <li>python 版本 python2.7</li> <li>openresty 版本 openresty-1.21.4.1</li> <li>django 版本 1.9.2</li></ul> <p>备注：如果使用不同的版本，需自行解决环境依赖等问题，官方不提供技术支持</p> <h3 id="控制台部署"><a href="#控制台部署" class="header-anchor">#</a> 控制台部署</h3> <ol><li># cd /opt</li> <li># yum install -y git</li> <li># git clone https://github.com/jx-sec/jxwaf-mini-server.git</li> <li># cd jxwaf-mini-server/</li> <li># sh install.sh</li> <li># pip install -r requirements.txt</li> <li># python manage.py makemigrations</li> <li># python manage.py migrate</li> <li># nohup python manage.py runserver 0.0.0.0:80 &amp;</li> <li>假设管理中心 IP 为 10.0.0.1,则打开网址 <a href="http://10.0.0.1/" target="_blank" rel="noopener noreferrer">http://10.0.0.1<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 进行注册并登陆,登陆成功后系统会自动进行初使化。</li></ol> <h3 id="节点部署"><a href="#节点部署" class="header-anchor">#</a> 节点部署</h3> <ol><li># cd /tmp</li> <li># yum install -y git</li> <li># git clone https://github.com/jx-sec/jxwaf.git</li> <li># cd jxwaf</li> <li># sh install_waf.sh</li> <li># 运行后显示类似信息即安装成功:</li></ol> <div class="language- extra-class"><pre class="language-text"><code>nginx: the configuration file /opt/jxwaf/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/jxwaf/nginx/conf/nginx.conf test is successful
+</code></pre></div><ol><li>假设管理中心 IP 为 10.0.0.1,则打开网址 <a href="http://10.0.0.1/" target="_blank" rel="noopener noreferrer">http://10.0.0.1<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 进行注册,注册完后登录账号,在 系统管理 -&gt; 基础配置 页面获取&quot;API_KEY&quot;和&quot;API_PASSWORD&quot;</li> <li># cd tools</li> <li># python jxwaf_init.py --api_key=84ceb8f8-c052-4d60-9b43-b6007ba67ba7 --api_password=e5546411-4d82-48ad-a3f7-3daf0de94d19 --waf_server=<a href="http://10.0.0.1/" target="_blank" rel="noopener noreferrer">http://10.0.0.1<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>运行完成后，显示类似信息即安装成功</li></ol> <div class="language- extra-class"><pre class="language-text"><code>config file:  /opt/jxwaf/nginx/conf/jxwaf/jxwaf_config.json
+config result:
+api_key is 84ceb8f8-c052-4d60-9b43-b6007ba67ba7,access_secret is e5546411-4d82-48ad-a3f7-3daf0de94d19
+waf_update_website is http://10.0.0.1/waf_update
+auth result:
+try to connect jxwaf server auth api_key and api_password,result is True
+</code></pre></div><ol start="5"><li># /opt/jxwaf/nginx/sbin/nginx</li> <li>启动 openresty,openresty 会在启动或者 reload 的时候自动到 jxwaf 管理中心拉取用户配置的最新规则,之后会定期同步配置。</li></ol> <h2 id="线上环境部署-源代码部署"><a href="#线上环境部署-源代码部署" class="header-anchor">#</a> 线上环境部署(源代码部署)</h2> <h3 id="环境准备-2"><a href="#环境准备-2" class="header-anchor">#</a> 环境准备</h3> <ul><li>服务器版本 Centos 7.x</li> <li>python 版本 python2.7</li> <li>openresty 版本 openresty-1.21.4.1</li> <li>django 版本 1.9.2</li> <li>Mysql/Mariadb 版本 &gt;= 5.6</li></ul> <p>备注：如果使用不同的版本，需自行解决环境依赖等问题，官方不提供技术支持</p> <h3 id="控制台部署-2"><a href="#控制台部署-2" class="header-anchor">#</a> 控制台部署</h3> <p>需要先部署好数据库，假设数据库地址为 192.168.1.1，端口为 3306，账号为 root，密码为 123456，数据库为 jxwaf</p> <ol><li># cd /opt</li> <li># yum install git -y</li> <li># git clone https://github.com/jx-sec/jxwaf-mini-server.git</li> <li># cd jxwaf-mini-server/</li> <li># sh install.sh</li> <li># pip install -r requirements.txt</li> <li># vim jxwaf_min_server/settings.py</li></ol> <div class="language- extra-class"><pre class="language-text"><code>#DEBUG = True
+DEBUG = False
+#ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+# Database
+# https://docs.djangoproject.com/en/1.9/ref/settings/#databases
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+#}
+
+DATABASES = {
+ 'default': {
+     'ENGINE': 'django.db.backends.mysql',
+     'NAME': 'jxwaf',
+     'USER': 'root',
+     'PASSWORD': '123456',
+     'HOST': '192.168.1.1',
+     'PORT': '3306',
+ }
+}
+</code></pre></div><ol start="8"><li># python manage.py makemigrations</li> <li># python manage.py migrate</li> <li># sh install_jxwaf_server.sh</li> <li># uwsgi --ini uwsgi.ini</li> <li># /opt/server/nginx/sbin/nginx -t</li></ol> <div class="language- extra-class"><pre class="language-text"><code>nginx: the configuration file /opt/server/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/server/nginx/conf/nginx.conf test is successful
+</code></pre></div><ol start="13"><li># /opt/server/nginx/sbin/nginx</li> <li>假设管理中心 IP 为 10.0.0.1,则打开网址 <a href="http://10.0.0.1/" target="_blank" rel="noopener noreferrer">http://10.0.0.1<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 进行注册并登陆,登陆成功后系统会自动进行初使化。</li></ol> <h3 id="节点部署-2"><a href="#节点部署-2" class="header-anchor">#</a> 节点部署</h3> <ol><li># cd /tmp</li> <li># yum install -y git</li> <li># git clone https://github.com/jx-sec/jxwaf.git</li> <li># cd jxwaf</li> <li># sh install_waf.sh</li> <li># 运行后显示类似信息即安装成功:</li></ol> <div class="language- extra-class"><pre class="language-text"><code>nginx: the configuration file /opt/jxwaf/nginx/conf/nginx.conf syntax is ok
+nginx: configuration file /opt/jxwaf/nginx/conf/nginx.conf test is successful
+</code></pre></div><ol><li>假设管理中心 IP 为 10.0.0.1,则打开网址 <a href="http://10.0.0.1/" target="_blank" rel="noopener noreferrer">http://10.0.0.1<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 进行注册,注册完后登录账号,在 系统管理 -&gt; 基础配置 页面获取&quot;API_KEY&quot;和&quot;API_PASSWORD&quot;</li> <li># cd tools</li> <li># python jxwaf_init.py --api_key=84ceb8f8-c052-4d60-9b43-b6007ba67ba7 --api_password=e5546411-4d82-48ad-a3f7-3daf0de94d19 --waf_server=<a href="http://10.0.0.1/" target="_blank" rel="noopener noreferrer">http://10.0.0.1<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>运行完成后，显示类似信息即安装成功</li></ol> <div class="language- extra-class"><pre class="language-text"><code>config file:  /opt/jxwaf/nginx/conf/jxwaf/jxwaf_config.json
+config result:
+api_key is 84ceb8f8-c052-4d60-9b43-b6007ba67ba7,access_secret is e5546411-4d82-48ad-a3f7-3daf0de94d19
+waf_update_website is http://10.0.0.1/waf_update
+auth result:
+try to connect jxwaf server auth api_key and api_password,result is True
+</code></pre></div><ol start="5"><li># /opt/jxwaf/nginx/sbin/nginx</li> <li>启动 openresty,openresty 会在启动或者 reload 的时候自动到 jxwaf 管理中心拉取用户配置的最新规则,之后会定期同步配置。</li></ol> <h2 id="日志采集-报表配置"><a href="#日志采集-报表配置" class="header-anchor">#</a> 日志采集&amp;报表配置</h2> <h3 id="jxlog-日志采集-推荐"><a href="#jxlog-日志采集-推荐" class="header-anchor">#</a> JXLOG 日志采集(推荐)</h3> <h4 id="jxlog-介绍"><a href="#jxlog-介绍" class="header-anchor">#</a> JXLOG 介绍</h4> <p>JXLOG 为 JXWAF 官方提供的轻量级日志报表解决方案，适合大部分中小企业。
+JXLOG 由 JXLOG 客户端和 ClickHouse 数据库组成，部署架构如下:
+<img src="/image/2.png" alt="图片描述"></p> <h4 id="环境准备-3"><a href="#环境准备-3" class="header-anchor">#</a> 环境准备</h4> <ul><li>服务器版本 Centos 7.x</li></ul> <p>备注：如果使用不同的版本，需自行解决环境依赖等问题，官方不提供技术支持</p> <h4 id="jxlog-部署"><a href="#jxlog-部署" class="header-anchor">#</a> JXLOG 部署</h4> <p>1.安装 docker 和 docker-compose，详情可以参考 docker 官方文档：
+https://docs.docker.com/engine/install/centos/</p> <div class="language- extra-class"><pre class="language-text"><code># yum install -y yum-utils
+
+#  yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+
+# yum install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
+# systemctl start docker
+</code></pre></div><p>2.docker-compose 部署 jxlog</p> <div class="language- extra-class"><pre class="language-text"><code># cd /opt
+# yum install -y git
+# git clone https://github.com/jx-sec/jxwaf-docker-file.git
+# cd jxwaf-docker-file/jxlog/
+# docker compose  up -d
+</code></pre></div><p>默认的 docker-compose.yml 文件中，clickhouse 的配置为:
+数据库: jxwaf
+账号: jxlog
+密码: jxlog
+<strong>线上环境部署需要修改 docker-compose.yml 文件中的默认密码为复杂密码</strong>
+运行命令 netstat -anp|grep 9000，显示如下则运行正常</p> <div class="language- extra-class"><pre class="language-text"><code>tcp        0      0 0.0.0.0:9000            0.0.0.0:*               LISTEN      26628/docker-proxy
+tcp6       0      0 :::9000                 :::*                    LISTEN      26634/docker-proxy
+
+</code></pre></div><h4 id="jxwaf-控制台报表配置"><a href="#jxwaf-控制台报表配置" class="header-anchor">#</a> JXWAF 控制台报表配置</h4> <h3 id="阿里云日志采集"><a href="#阿里云日志采集" class="header-anchor">#</a> 阿里云日志采集</h3> <ol><li>登陆阿里云控制台，进入 日志服务 SLS</li> <li>创建 Project
+<img src="/image/3.png" alt="图片描述"></li></ol> <p>3.创建 Logstore
+<img src="/image/4.png" alt="图片描述"></p> <p>4.安装 logtail
+<img src="/image/5.png" alt="图片描述">
+选择 自定义数据插件
+<img src="/6.png" alt="图片描述">
+按照说明完成安装到第四步 <strong>数据源设置</strong> ，以下提供的配置为开启 5555 端口的 tcp 接收，可自行修改端口配置 如 改为 &quot;tcp://0.0.0.0:6666&quot; 即开启 6666 端口
+<img src="/image/7.png" alt="图片描述"></p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;inputs&quot;: [
+        {
+            &quot;detail&quot;: {
+                &quot;ParseProtocol&quot;: &quot;auto&quot;,
+                &quot;Address&quot;: &quot;tcp://0.0.0.0:5555&quot;
+            },
+            &quot;type&quot;: &quot;service_syslog&quot;
+        }
+    ],
+    &quot;processors&quot;: [
+        {
+            &quot;detail&quot;: {
+                &quot;DropKeys&quot;: [
+                    &quot;_facility_&quot;,
+                    &quot;_hostname_&quot;,
+                    &quot;_ip_&quot;,
+                    &quot;_priority_&quot;,
+                    &quot;_program_&quot;,
+                    &quot;_severity_&quot;,
+                    &quot;_unixtimestamp_&quot;
+                ]
+            },
+            &quot;type&quot;: &quot;processor_drop&quot;
+        },
+        {
+            &quot;detail&quot;: {
+                &quot;KeepSource&quot;: false,
+                &quot;ExpandDepth&quot;: 0,
+                &quot;ExpandConnector&quot;: &quot;&quot;,
+                &quot;SourceKey&quot;: &quot;_content_&quot;,
+                &quot;NoKeyError&quot;: true
+            },
+            &quot;type&quot;: &quot;processor_json&quot;
+        }
+    ]
+}
+</code></pre></div><p>开启全局索引
+<img src="/image/8.png" alt="图片描述"></p> <p>5.配置索引
+进行 JXWAF 的控制台 系统管理 -&gt; 日志配置
+<img src="/image/9.png" alt="图片描述">
+配置完成后，对控制台配置的防护网站进行访问，当 SLS 接收到日志后，点击
+<img src="/image/10.png" alt="图片描述">
+选择 自动生成索引，保存索引即可
+<img src="/image/11.png" alt="图片描述"></p> <h3 id="腾讯云日志采集"><a href="#腾讯云日志采集" class="header-anchor">#</a> 腾讯云日志采集</h3> <p>注意: 腾讯云日志服务提供的 API 接口不稳定，导致报表功能容易发生异常，请谨慎选择该方案。（2022 年 9 月份测试）</p> <ol><li>登陆腾讯云控制台，进入 日志服务</li> <li>日志服务 -&gt; 日志主题，创建日志主题
+<img src="/image/12.png" alt="图片描述"> 3.新增 LogListener 采集
+<img src="/image/13.png" alt="图片描述"> <img src="/image/14.png" alt="图片描述"> <img src="/image/15.png" alt="图片描述"> <img src="/image/16.png" alt="图片描述">
+设置完成后，下载并安装 logstash，详情可以查询 logstash 的官方文档:
+<a href="https://www.elastic.co/guide/en/logstash/7.17/index.html" target="_blank" rel="noopener noreferrer">Logstash Reference [7.17] | Elastic<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
+详情配置文件如下，仅供参考，详情请参考腾讯云官方文档说明:</li></ol> <div class="language- extra-class"><pre class="language-text"><code>input {
+  tcp {
+    host =&gt; &quot;127.0.0.1&quot;
+    port =&gt; 5555
+    codec =&gt; json
+    ecs_compatibility =&gt; disabled
+  }
+}
+
+filter {
+        mutate {
+        remove_field =&gt; [&quot;@version&quot;]
+        remove_field =&gt; [&quot;@timestamp&quot;]
+        remove_field =&gt; [&quot;port&quot;]
+}
+
+   json {
+        source =&gt; &quot;message&quot;
+      }
+
+}
+output {
+        kafka {
+          topic_id =&gt; &quot;fb88a4e9-1da4-4104-9142-b29858cb36c9&quot;
+          bootstrap_servers =&gt; &quot;gz-producer.cls.tencentcs.com:9096&quot;
+          sasl_mechanism =&gt; &quot;PLAIN&quot;
+          security_protocol =&gt; &quot;SASL_PLAINTEXT&quot;
+          compression_type =&gt; &quot;gzip&quot;
+          sasl_jaas_config =&gt; &quot;org.apache.kafka.common.security.plain.PlainLoginModule required username='bdc9bca2-4f21-4c5f-8b57-4f13c887bc14' password='AKIDaVv80mFSQ7lnlUxA8rlZXGkyxg9NL42l#VvkUCnAII4dy86qNgkdIyb1CAwVrvrWy';&quot;
+        }
+    }
+</code></pre></div><p>当前配置为开启 5555 端口的 tcp 接收，可自行修改端口配置。 3.配置索引
+进行 JXWAF 的控制台 系统管理 -&gt; 日志配置
+<img src="/image/17.png" alt="图片描述">
+配置完成后，对控制台配置的防护网站进行访问，当腾讯云日志接收到日志后，点击
+<img src="/image/18.png" alt="图片描述"> <img src="/image/19.png" alt="图片描述">
+自动生成索引后点击确认即可</p> <h2 id="部署效果验证"><a href="#部署效果验证" class="header-anchor">#</a> 部署效果验证</h2></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/about.html" class="prev">
+        了解
+      </a></span> <span class="next"><a href="/use.html">
+        使用
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.ffd91db1.js" defer></script><script src="/assets/js/2.51d0b6c7.js" defer></script><script src="/assets/js/13.90c8297b.js" defer></script>
+  </body>
+</html>
