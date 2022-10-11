@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /image/logo.png
+description: JXWAF是一款开源的Web应用防火墙，可以同时为Web业务提供基础安全防护，流量安全防护和业务安全防护。通过清洗Web请求中的恶意流量，可以有效避免业务数据泄露，服务器被入侵，流量异常导致服务不可用等问题，保障业务的安全性和可用性。
 
 features:
   - title: 简洁至上

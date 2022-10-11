@@ -1,2 +1,6 @@
 # jxwaf-doc
- jxwaf文档
+
+jxwaf 文档
+
+yarn docs:dev
+yarn docs:build
