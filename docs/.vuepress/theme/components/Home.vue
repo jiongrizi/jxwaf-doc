@@ -1,5 +1,5 @@
 <template>
-    <main class="home" :aria-labelledby="data.heroText !== null ? 'main-title' : null">
+    <main class="home" :aria-labelledby="data.heroText !== null ? 'main-title' : null" id="myhome">
         <header class="hero">
           <img v-if="data.heroImage" :src="$withBase(data.heroImage)" :alt="data.heroAlt || 'hero'">
         
@@ -118,7 +118,7 @@ export default {
 </script>
 
 <style lang="stylus">
-.home
+#myhome
   padding $navbarHeight 0
   margin 0px auto
   display block
@@ -255,7 +255,7 @@ export default {
       color: #3eaf7c;
 
 @media (max-width: $MQMobile)
-  .home
+  #myhome
     .features
       flex-direction column
     .feature
@@ -263,7 +263,7 @@ export default {
       padding 0 2.5rem
 
 @media (max-width: $MQMobileNarrow)
-  .home
+  #myhome
     padding-left 0
     padding-right 0
     .hero
@@ -272,8 +272,7 @@ export default {
         margin 2rem auto 1.2rem
       h1
         font-size 2rem
-      h1, .description, .action
-        margin 1.2rem auto
+      
       .description
         font-size 1.2rem
       .action-button
@@ -283,13 +282,13 @@ export default {
       h2
         font-size 1.25rem
 @media (max-width: 900px)
-  .home
+  #myhome
     .my-text
       li
         width: 50%
     
 @media (max-width: 600px)
-  .home
+  #myhome
     .my-text
       li
         width: 100%
